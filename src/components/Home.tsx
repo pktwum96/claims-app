@@ -22,7 +22,7 @@ export const HomePage = () => {
             </section>
             <section className="about-us container">
                 <h1>About Us</h1>
-                <img src={ClaimsLogo} />
+                <img src={ClaimsLogo} alt={"icon-frame"} />
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat, et aliquam ac donec donec et lobortis. At sit vitae quis nibh ut sed ullamcorper varius ultricies. Donec lacinia nullam rhoncus, elementum vitae, viverra.
                     Suscipit scelerisque porta amet, non augue urna quis lorem. Ac ut eu vel faucibus porttitor luctus faucibus sagittis. Ut purus dictumst accumsan.
@@ -41,7 +41,7 @@ export const HomePage = () => {
                     </h2>
                     <button className="btn btn-primary">View</button>
                 </div>
-                <img src={Frame} />
+                <img src={Frame} alt={"icon-frame"} />
             </section>
 
             <section className="blog-posts container">
@@ -64,20 +64,26 @@ export const HomePage = () => {
                         <h5>Contact Us</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Natoque nam massa at a.....</p>
                         <div>
-                            <a href="#" className="fa fa-facebook"></a>
-                            <a href="#" className="fa fa-twitter"></a>
-                            <a href="#" className="fa fa-instagram"></a>
+                            <a href="/" className="fa fa-facebook">
+                                <span></span>
+                            </a>
+                            <a href="/" className="fa fa-twitter">
+                                <span></span>
+                            </a>
+                            <a href="/" className="fa fa-instagram">
+                                <span></span>
+                            </a>
                         </div>
                     </div>
                     <ul className="footer-link">
                         <li>
-                            <a>FAQ's</a>
+                            <a href="/">FAQ's</a>
                         </li>
                         <li>
-                            <a>Terms Of Service</a>
+                            <a href="/">Terms Of Service</a>
                         </li>
                         <li>
-                            <a>Privacy Policy</a>
+                            <a href="/">Privacy Policy</a>
                         </li>
                     </ul>
                 </div>

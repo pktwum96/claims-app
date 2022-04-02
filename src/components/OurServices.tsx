@@ -27,8 +27,8 @@ export const OurServices = () => {
             {services.map((service) => {
                 const { icon, title, description } = service;
                 return (
-                    <div>
-                        <img src={icon} />
+                    <div key={title}>
+                        <img src={icon} alt={title} />
                         <h5>{title}</h5>
                         <p>{description}</p>
                     </div>

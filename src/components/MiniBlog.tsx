@@ -30,9 +30,9 @@ export const MiniBlog = () => {
             {blogPosts.map((post) => {
                 const { icon, title, description, link } = post;
                 return (
-                    <div className="card text-center">
+                    <div key={title} className="card text-center">
                         <a href={link}>
-                            <img src={icon} />
+                            <img src={icon} alt={title} />
                             <h5>{title}</h5>
                             <p>{description}</p>
                         </a>
