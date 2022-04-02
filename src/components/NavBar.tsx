@@ -1,6 +1,7 @@
 import * as React from "react";
 import ClaimsLogo from "../images/claims-logo.png";
 import NavBarToggler from "../images/Vector.png";
+import { Link } from "react-router-dom";
 import "../styles/NavBar.css";
 
 export const NavBar = () => {
@@ -20,22 +21,27 @@ export const NavBar = () => {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav ms-auto">
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="/">
+                            <Link className="nav-link active" aria-current="page" to="/">
                                 Home
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/">
+                            <Link className="nav-link" to="/">
                                 About Us
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/">
+                            <Link className="nav-link" to="/">
+                                Claims
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/">
                                 Blog
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav-item">
-                            <button className="nav-link btn btn-primary">Get Started</button>
+                            <button className="btn btn-primary">Get Started</button>
                         </li>
                     </ul>
                 </div>
