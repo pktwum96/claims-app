@@ -1,0 +1,203 @@
+#homepage {
+    margin-top: -56px;
+}
+
+section {
+    padding: 5rem 0;
+}
+
+section h1 {
+    position: relative;
+    line-height: 1.2em;
+    margin-bottom: 1rem;
+}
+section h1:before {
+    position: absolute;
+    left: -webkit-calc(50% - 25px);
+    left: -moz-calc(50% - 25px);
+    left: calc(50% - 25px);
+    top: 1.75em;
+    height: 0;
+    width: 50px;
+    content: "";
+    border-top: 5px solid #1f64ff;
+}
+.splash-screen {
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    background-position: center;
+    background-image: url(../images/black-family.jpg);
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/black-family.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.3)), color-stop(0%, rgba(0, 0, 0, 0.3)), color-stop(100%, rgba(0, 0, 0, 0.3))), url(../images/black-family.jpg);
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 100%), url(../images/black-family.jpg);
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 100%), url(../images/black-family.jpg);
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 100%), url(../images/black-family.jpg);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 100%), url(../images/black-family.jpg);
+}
+.splash-screen-text {
+    color: white;
+}
+.splash-screen-text h5 {
+    padding: 2rem 0;
+    font-weight: 300;
+    font-size: 2em;
+}
+.splash-screen-text h5 span {
+    font-weight: 900;
+}
+.splash-screen-text button {
+    background-color: white;
+    margin: 2rem;
+    padding: 0.5rem 1rem;
+}
+.splash-screen img {
+    display: none;
+}
+
+.about-us {
+    text-align: center;
+    background: #f5f6fa;
+}
+
+.about-us * {
+    margin-bottom: 2rem;
+}
+
+.our-services {
+    text-align: center;
+}
+.our-services * {
+    margin-bottom: 2rem;
+}
+
+.how-to-file {
+    background-color: #f5f6fa;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 0 2rem 0.5rem;
+}
+.how-to-file button {
+    margin-top: 1.5rem;
+    padding: 0.4rem 1.2rem;
+}
+
+.how-to-file h2 {
+    font-weight: 900;
+    font-size: 35px;
+}
+.blog-posts {
+    text-align: center;
+}
+
+.blog-posts h1 {
+    margin-bottom: 2rem;
+}
+
+.blog-posts * {
+    margin-bottom: 1rem;
+}
+
+.blog-posts .card {
+    margin-bottom: 2rem;
+    align-items: center;
+    border: 1.03px solid #1f64ff;
+    border-radius: 1rem;
+}
+
+.blog-posts img {
+    width: 100%;
+    padding: 1rem;
+}
+.blog-posts a {
+    color: black;
+    text-decoration: none;
+}
+
+.call-to-action {
+    background: #f5f6fa;
+    text-align: center;
+}
+
+.call-to-action h5 {
+    font-weight: 900;
+    margin-bottom: 3rem;
+}
+
+footer.container {
+    background-color: #090949;
+    color: rgb(255, 255, 255);
+    padding: 3rem 2rem 0;
+}
+
+footer .footer-summary {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+}
+
+footer .footer-summary div {
+    flex: 1;
+}
+
+footer .footer-summary ul {
+    list-style-type: none;
+}
+footer .footer-summary ul li {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 13px;
+    margin: 1rem 0;
+}
+footer .footer-contacts h5 {
+    font-size: 25px;
+}
+footer .footer-contacts p {
+    font-size: 15px;
+}
+footer .footer-about {
+    text-align: center;
+}
+footer .footer-about h5 {
+    font-size: 1.75rem;
+}
+footer .footer-about p {
+    padding: 1rem 2rem;
+}
+
+footer .footer-copyright {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+footer .fa {
+    font-size: 30px;
+    width: 50px;
+    text-align: left;
+    color: white;
+    text-decoration: none;
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .splash-screen {
+        background: none;
+    }
+
+    .splash-screen img {
+        display: block;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
