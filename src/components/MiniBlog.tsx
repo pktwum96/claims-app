@@ -1,4 +1,3 @@
-import * as React from "react";
 import Police from "../images/police.jpg";
 import Riot from "../images/riot.jpg";
 import Court from "../images/court.jpg";

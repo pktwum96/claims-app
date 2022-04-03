@@ -2,16 +2,16 @@
     margin-top: -56px;
 }
 
-section {
+#homepage section {
     padding: 5rem 0;
 }
 
-section h1 {
+#homepage section h1 {
     position: relative;
     line-height: 1.2em;
     margin-bottom: 1rem;
 }
-section h1:before {
+#homepage section h1:before {
     position: absolute;
     left: -webkit-calc(50% - 25px);
     left: -moz-calc(50% - 25px);

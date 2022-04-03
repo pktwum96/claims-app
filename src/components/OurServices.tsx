@@ -1,4 +1,3 @@
-import * as React from "react";
 import ClaimsLogo from "../images/claims-logo-2.png";
 import Scales from "../images/scales.png";
 import File from "../images/file.png";

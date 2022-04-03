@@ -1,4 +1,3 @@
-import * as React from "react";
 import "../styles/Home.css";
 import BlackFamily from "../images/black-family.jpg";
 import ClaimsLogo from "../images/claims-logo-2.png";
@@ -42,10 +41,7 @@ export const HomePage = () => {
             <section className=" how-to-file bg-grey">
                 <div className="container">
                     <div>
-                        <h2>
-                            How to file
-                            <br /> a CLAIM
-                        </h2>
+                        <h2>How to file a CLAIM</h2>
                         <button className="btn btn-primary">View</button>
                     </div>
                     <img src={Frame} alt={"icon-frame"} />
@@ -70,43 +66,6 @@ export const HomePage = () => {
                     <button className="btn btn-primary">Get Started</button>
                 </div>
             </section>
-            <footer>
-                <div className="container">
-                    <div className="footer-summary">
-                        <div className="footer-contacts">
-                            <h5>Contact Us</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Natoque nam massa at a.....</p>
-                            <div>
-                                <a href="/" className="fa fa-facebook">
-                                    <span></span>
-                                </a>
-                                <a href="/" className="fa fa-twitter">
-                                    <span></span>
-                                </a>
-                                <a href="/" className="fa fa-instagram">
-                                    <span></span>
-                                </a>
-                            </div>
-                        </div>
-                        <ul className="footer-link">
-                            <li>
-                                <a href="/">FAQ's</a>
-                            </li>
-                            <li>
-                                <a href="/">Terms Of Service</a>
-                            </li>
-                            <li>
-                                <a href="/">Privacy Policy</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div className="footer-about">
-                        <h5>CLAIMS</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Natoque nam massa at a.....</p>
-                    </div>
-                    <p className="footer-copyright">Copyright © Claims 2022</p>
-                </div>
-            </footer>
         </div>
     );
 };

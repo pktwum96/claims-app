@@ -1,7 +1,21 @@
 .navbar-brand {
     color: white;
-    font-weight: bolder;
     font-weight: 700;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+}
+.navbar-brand svg {
+    margin-right: 0.3rem;
+}
+.navbar:not(.homepage) {
+    background-color: #1f64ff;
+}
+/* .navbar:not(.homepage).expanded {
+    padding-bottom: 0;
+} */
+.logo-svg-image {
+    filter: brightness(0) invert(1);
 }
 
 .navbar-brand:hover {
@@ -12,10 +26,16 @@
 .navbar-toggler:focus {
     box-shadow: none;
 }
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 768px) {
     .navbar .container-fluid {
         padding: 0;
+    }
+
+    .navbar.expanded {
+        background-color: #1f64ff;
+        padding-bottom: 0;
     }
 
     .navbar-collapse {
@@ -26,17 +46,17 @@
         color: black;
     }
 
-    .navbar-collapse li {
+    .navbar li {
         margin-bottom: 0.25rem;
     }
 
-    .navbar-collapse .nav-link {
+    .navbar .nav-link {
         color: black;
         position: relative;
         font-weight: 700;
     }
 
-    .navbar-collapse li:not(:nth-last-of-type(2)) .nav-link:before {
+    .navbar li:not(:nth-last-of-type(2)) .nav-link:before {
         position: absolute;
         left: 10%;
         top: 2.5em;
@@ -50,13 +70,30 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     .navbar-brand,
-    .nav-link {
+    .navbar .nav-link {
+        color: white;
+        padding-left: 0;
+        padding-right: 0;
+        margin-right: 2.5rem;
+    }
+    .navbar.homepage .navbar-brand,
+    .navbar.homepage .nav-link {
         color: black;
     }
+    .navbar .nav-item button {
+        color: blue;
+        background-color: white;
+    }
+    .navbar .nav-link.active {
+        border-bottom: 3.5px solid white;
+    }
+    .navbar.homepage .nav-link.active {
+        border-bottom: 3.5px solid #1f64ff;
+    }
 
-    /* .nav-link.active {
-        color: white;
-    } */
+    .navbar.homepage .logo-svg-image {
+        filter: invert(38%) sepia(97%) saturate(5479%) hue-rotate(220deg) brightness(104%) contrast(101%);
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
