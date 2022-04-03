@@ -14,22 +14,16 @@
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 768px) {
-    .navbar-toggler:not(.collapsed) img {
-        display: none;
-    }
-    .navbar-toggler:not(.collapsed):after {
-        content: "x";
-    }
     .navbar .container-fluid {
         padding: 0;
     }
+
     .navbar-collapse {
-        padding-bottom: 2rem;
+        padding: 2rem 0;
         background: white;
         border-radius: 1rem;
         text-align: center;
         color: black;
-        width: 100;
     }
 
     .navbar-collapse li {
@@ -45,7 +39,7 @@
     .navbar-collapse li:not(:nth-last-of-type(2)) .nav-link:before {
         position: absolute;
         left: 10%;
-        top: 3em;
+        top: 2.5em;
         height: 0;
         width: 80%;
         content: "";
@@ -55,6 +49,14 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+    .navbar-brand,
+    .nav-link {
+        color: black;
+    }
+
+    /* .nav-link.active {
+        color: white;
+    } */
 }
 
 /* Large devices (laptops/desktops, 992px and up) */

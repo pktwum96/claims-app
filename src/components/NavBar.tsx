@@ -5,8 +5,9 @@ import { Link } from "react-router-dom";
 import "../styles/NavBar.css";
 
 export const NavBar = () => {
+    console.log(window.location.pathname);
     return (
-        <nav className="navbar navbar-expand-lg">
+        <nav className="navbar navbar-expand-md">
             <div className="container-fluid">
                 <a className="navbar-brand" href="/">
                     <img src={ClaimsLogo} alt="Claims Logo" width="30" height="24" className="d-inline-block align-text-top" />
@@ -21,22 +22,22 @@ export const NavBar = () => {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav ms-auto">
                         <li className="nav-item">
-                            <Link className="nav-link active" aria-current="page" to="/">
+                            <Link className="nav-link me-2 active" aria-current="page" to="/">
                                 Home
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/">
+                            <Link className="nav-link me-2" to="about">
                                 About Us
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/">
+                            <Link className="nav-link me-2" to="app">
                                 Claims
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/">
+                            <Link className="nav-link me-2" to="blog">
                                 Blog
                             </Link>
                         </li>

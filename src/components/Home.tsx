@@ -22,7 +22,7 @@ export const HomePage = () => {
                     <img src={BlackFamily} alt="black family" />
                 </div>
             </section>
-            <section className="about-us">
+            <section className="about-us bg-grey">
                 <div className="container">
                     <h1>About Us</h1>
                     <img src={ClaimsLogo} alt={"icon-frame"} />
@@ -33,13 +33,13 @@ export const HomePage = () => {
                     <button className="btn btn-primary">Read More</button>
                 </div>
             </section>
-            <section className="our-services ">
+            <section className="our-services bg-white">
                 <div className="container">
                     <h1>Our Services</h1>
                     <OurServices />
                 </div>
             </section>
-            <section className=" how-to-file">
+            <section className=" how-to-file bg-grey">
                 <div className="container">
                     <div>
                         <h2>
@@ -52,14 +52,14 @@ export const HomePage = () => {
                 </div>
             </section>
 
-            <section className="blog-posts ">
+            <section className="blog-posts bg-white">
                 <div className="container">
                     <h1>Blog Posts</h1>
                     <MiniBlog />
                     <button className="btn btn-primary">View All</button>
                 </div>
             </section>
-            <section className="call-to-action ">
+            <section className="call-to-action bg-grey">
                 <div className="container">
                     <h5>
                         Need Legal Advice or Counselling?

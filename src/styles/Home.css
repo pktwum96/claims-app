@@ -57,6 +57,9 @@ section h1:before {
 
 .about-us {
     text-align: center;
+}
+
+.bg-grey {
     background: #f5f6fa;
 }
 
@@ -71,8 +74,11 @@ section h1:before {
     margin-bottom: 2rem;
 }
 
+.our-services h5 {
+    font-weight: 700;
+}
+
 .how-to-file {
-    background-color: #f5f6fa;
     padding: 2rem 0 2rem 0.5rem;
 }
 .how-to-file .container {
@@ -104,7 +110,7 @@ section h1:before {
 }
 
 .blog-posts .card {
-    margin-bottom: 2rem;
+    margin: 1.5rem;
     align-items: center;
     border: 1.03px solid #1f64ff;
     border-radius: 1rem;
@@ -113,6 +119,8 @@ section h1:before {
 .blog-posts img {
     width: 100%;
     padding: 1rem;
+    height: 205px;
+    object-fit: cover;
 }
 .blog-posts a {
     color: black;
@@ -120,7 +128,6 @@ section h1:before {
 }
 
 .call-to-action {
-    background: #f5f6fa;
     text-align: center;
 }
 
@@ -188,18 +195,47 @@ footer .fa {
     color: white;
     text-decoration: none;
 }
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+    #homepage {
+        margin-top: 0;
+    }
+
     .splash-screen {
-        background: none;
+        background: white;
     }
 
     .splash-screen img {
         display: block;
+    }
+    .splash-screen .splash-screen-text {
+        color: black;
+        text-align: left;
+        flex: 1;
+        padding: 0 2rem;
+    }
+
+    .splash-screen img {
+        width: 100%;
+        height: 20rem;
+        flex: 1;
+        object-fit: cover;
+    }
+    .splash-screen .splash-screen-text button {
+        margin-left: 0;
+    }
+    .splash-screen .container {
+        display: flex;
+    }
+
+    .our-services .services-container {
+        flex-direction: row !important;
+        padding-top: 4rem;
+    }
+    .our-services .services-container img {
+        width: 64px;
+        height: 64px;
     }
 }
 

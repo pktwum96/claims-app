@@ -1,5 +1,4 @@
 import * as React from "react";
-import "../styles/OurServices.css";
 import ClaimsLogo from "../images/claims-logo-2.png";
 import Scales from "../images/scales.png";
 import File from "../images/file.png";
@@ -23,17 +22,17 @@ export const OurServices = () => {
         },
     ];
     return (
-        <>
+        <div className="services-container d-flex flex-column">
             {services.map((service) => {
                 const { icon, title, description } = service;
                 return (
-                    <div key={title}>
+                    <div key={title} className="m-2 d-flex align-items-center flex-column">
                         <img src={icon} alt={title} />
                         <h5>{title}</h5>
                         <p>{description}</p>
                     </div>
                 );
             })}
-        </>
+        </div>
     );
 };
