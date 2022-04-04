@@ -1,4 +1,3 @@
-import React from "react";
 import { Blog } from "./components/Blog";
 import { HomePage } from "./components/Home";
 import { NavBar } from "./components/NavBar";
@@ -8,6 +7,7 @@ import { AboutUs } from "./components/AboutUs";
 import { ClaimsApp } from "./components/ClaimsApp";
 import { FooterSection } from "./components/FooterSection";
 import { ContactUs } from "./components/ContactUs";
+import { ScrollToTop } from "./helpers/ScrollToTop";
 
 interface NavRouteProps {
     path?: string;
@@ -21,9 +21,11 @@ const NavRoute = (props: NavRouteProps) => {
         </>
     );
 };
+
 const App = () => {
     return (
         <BrowserRouter>
+            <ScrollToTop />
             <Routes>
                 <Route path="/" element={<NavRoute path="/" component={<HomePage />} />} />
                 <Route path="home" element={<NavRoute path="/" component={<HomePage />} />} />
