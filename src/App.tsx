@@ -8,6 +8,9 @@ import { ClaimsApp } from "./components/ClaimsApp";
 import { FooterSection } from "./components/FooterSection";
 import { ContactUs } from "./components/ContactUs";
 import { ScrollToTop } from "./helpers/ScrollToTop";
+import { FAQ } from "./components/FAQ";
+import { PrivacyPolicy } from "./components/PrivacyPolicy";
+import { TermsAndConditions } from "./components/TermsAndConditions";
 
 interface NavRouteProps {
     path?: string;
@@ -33,6 +36,9 @@ const App = () => {
                 <Route path="claims" element={<NavRoute component={<ClaimsApp />} />} />
                 <Route path="about" element={<NavRoute component={<AboutUs />} />} />
                 <Route path="contact-us" element={<NavRoute component={<ContactUs />} />} />
+                <Route path="faq" element={<NavRoute component={<FAQ />} />} />
+                <Route path="terms" element={<NavRoute component={<TermsAndConditions />} />} />
+                <Route path="privacy-policy" element={<NavRoute component={<PrivacyPolicy />} />} />
 
                 <Route path="*" element={<NavRoute component={<Error404 />} />} />
             </Routes>

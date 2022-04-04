@@ -22,13 +22,13 @@ export const FooterSection = () => {
                     </div>
                     <ul className="footer-link">
                         <li>
-                            <Link to="/">FAQ's</Link>
+                            <Link to="/faq">FAQ's</Link>
                         </li>
                         <li>
-                            <Link to="/">Terms Of Service</Link>
+                            <Link to="/terms">Terms Of Service</Link>
                         </li>
                         <li>
-                            <Link to="/">Privacy Policy</Link>
+                            <Link to="/privacy-policy">Privacy Policy</Link>
                         </li>
                     </ul>
                 </div>

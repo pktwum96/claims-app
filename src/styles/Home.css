@@ -11,6 +11,23 @@ section {
     margin-bottom: 1rem;
 }
 
+#claims-banner {
+    background-color: #090949;
+    width: 100%;
+    color: white;
+    height: 20vh;
+    text-align: center;
+    display: flex;
+}
+#claims-banner span {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+#claims-banner span h5 {
+    margin: 0;
+    font-weight: 900;
+}
 #claims-app img {
     max-height: 15rem;
     max-width: 100%;
