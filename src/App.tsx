@@ -7,6 +7,7 @@ import { Error404 } from "./components/Error404";
 import { AboutUs } from "./components/AboutUs";
 import { ClaimsApp } from "./components/ClaimsApp";
 import { FooterSection } from "./components/FooterSection";
+import { ContactUs } from "./components/ContactUs";
 
 interface NavRouteProps {
     path?: string;
@@ -27,8 +28,10 @@ const App = () => {
                 <Route path="/" element={<NavRoute path="/" component={<HomePage />} />} />
                 <Route path="home" element={<NavRoute path="/" component={<HomePage />} />} />
                 <Route path="blog" element={<NavRoute component={<Blog />} />} />
-                <Route path="app" element={<NavRoute component={<ClaimsApp />} />} />
+                <Route path="claims" element={<NavRoute component={<ClaimsApp />} />} />
                 <Route path="about" element={<NavRoute component={<AboutUs />} />} />
+                <Route path="contact-us" element={<NavRoute component={<ContactUs />} />} />
+
                 <Route path="*" element={<NavRoute component={<Error404 />} />} />
             </Routes>
             <FooterSection />

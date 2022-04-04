@@ -4,8 +4,10 @@ import ClaimsLogo from "../images/claims-logo-2.png";
 import Frame from "../images/frame.png";
 import { OurServices } from "./OurServices";
 import { MiniBlog } from "./MiniBlog";
+import { useNavigate } from "react-router-dom";
 
 export const HomePage = () => {
+    const navigate = useNavigate();
     return (
         <div id="homepage">
             <section className="splash-screen">
@@ -16,7 +18,9 @@ export const HomePage = () => {
                             <span>to the LAW</span>
                         </h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Natoque nam massa. </p>
-                        <button className="btn btn-outline-primary">Get Started</button>
+                        <button className="btn btn-outline-primary" onClick={() => navigate("/contact-us")}>
+                            Get Started
+                        </button>
                     </div>
                     <img src={BlackFamily} alt="black family" />
                 </div>
@@ -29,7 +33,9 @@ export const HomePage = () => {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat, et aliquam ac donec donec et lobortis. At sit vitae quis nibh ut sed ullamcorper varius ultricies. Donec lacinia nullam rhoncus, elementum vitae,
                         viverra. Suscipit scelerisque porta amet, non augue urna quis lorem. Ac ut eu vel faucibus porttitor luctus faucibus sagittis. Ut purus dictumst accumsan.
                     </p>
-                    <button className="btn btn-primary">Read More</button>
+                    <button className="btn btn-primary" onClick={() => navigate("/about")}>
+                        Read More
+                    </button>
                 </div>
             </section>
             <section className="our-services bg-white">
@@ -42,7 +48,9 @@ export const HomePage = () => {
                 <div className="container">
                     <div>
                         <h2>How to file a CLAIM</h2>
-                        <button className="btn btn-primary">View</button>
+                        <button className="btn btn-primary" onClick={() => navigate("/claims")}>
+                            View
+                        </button>
                     </div>
                     <img src={Frame} alt={"icon-frame"} />
                 </div>
@@ -52,7 +60,9 @@ export const HomePage = () => {
                 <div className="container">
                     <h1>Blog Posts</h1>
                     <MiniBlog />
-                    <button className="btn btn-primary">View All</button>
+                    <button className="btn btn-primary" onClick={() => navigate("/blog")}>
+                        View All
+                    </button>
                 </div>
             </section>
             <section className="call-to-action bg-grey">
@@ -63,7 +73,9 @@ export const HomePage = () => {
                         Message us today
                     </h5>
 
-                    <button className="btn btn-primary">Get Started</button>
+                    <button className="btn btn-primary" onClick={() => navigate("/contact-us")}>
+                        Get Started
+                    </button>
                 </div>
             </section>
         </div>

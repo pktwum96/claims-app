@@ -7,42 +7,7 @@
     object-fit: cover;
 }
 
-.about-us-page h1 {
-    font-weight: 900;
-    text-align: center;
-    position: relative;
-    margin: 2rem 0;
-}
-
-.about-us-page h1:before {
-    position: absolute;
-    left: 0;
-    top: 1.2em;
-    height: 0;
-    width: 100%;
-    content: "";
-    border-top: 0.25rem solid black;
-}
 .about-us-page h2 {
     text-align: center;
     margin: 1.5rem 0;
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 768px) {
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    .about-us-page img {
-        height: 20rem;
-    }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
 }

@@ -1,15 +1,35 @@
 #homepage {
     margin-top: -56px;
 }
-
-#homepage section {
-    padding: 5rem 0;
+section {
+    padding: 3rem 0;
 }
 
 #homepage section h1 {
     position: relative;
     line-height: 1.2em;
     margin-bottom: 1rem;
+}
+
+#claims-app img {
+    width: 100%;
+}
+
+.lined-title {
+    font-weight: 900;
+    text-align: center;
+    position: relative;
+    margin: 2rem 0;
+}
+
+.lined-title:before {
+    position: absolute;
+    left: 0;
+    top: 1.2em;
+    height: 0;
+    width: 100%;
+    content: "";
+    border-top: 0.125rem solid black;
 }
 #homepage section h1:before {
     position: absolute;
@@ -237,12 +257,4 @@ footer .fa {
         width: 64px;
         height: 64px;
     }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
 }
